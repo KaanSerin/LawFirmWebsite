@@ -1,0 +1,104 @@
+@import 'config';
+@import 'utility';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    color: $light-color;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.banner{
+    @include set-gradient-background($dark-50, $dark-50, '../images/mainBackground.jpg');
+}
+
+.logo{
+    width: 227px;
+    cursor: pointer;
+}
+
+.links{
+
+    a, button{
+        font-size: 1.1rem;
+    }
+
+    a{
+        color: $light-color;
+        font-weight: 300;
+        padding: 0 0 4px 0;
+        margin-right: 70px;
+        
+        &:hover{
+            border-bottom: 1px solid $light-color;
+        }
+    }
+}
+
+.content{
+
+    h1{
+        font-size: 4.375rem;
+        font-weight: 400;
+    }
+
+    h3{
+        margin-top: 50px;
+        font-size: 2.3125rem;
+        font-weight: 200;
+        line-height: 1.2;
+        width: 70%;
+    }
+}
+
+.what-we-offer{
+    color: $dark-color;
+    padding: 32px 151px 55px 151px;
+    text-align: center
+    ; 
+    h4{
+        font-size: 2rem;
+        color: $accent-color;
+    }
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+.feature{
+    width: 219px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    h5{
+        margin-top: 20px;
+        font-size: 1.125rem;
+    }
+
+    p{
+        margin-top: 15px;
+        font-size: 0.875rem;
+    }
+}
+
+.feature-img{
+    width: 120px;
+}

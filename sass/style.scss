@@ -67,38 +67,40 @@ a{
 
 .what-we-offer{
     color: $dark-color;
-    padding: 32px 151px 55px 151px;
-    text-align: center
-    ; 
+    padding: 0 151px;
+    text-align: center;
+
     h4{
         font-size: 2rem;
         color: $accent-color;
     }
 }
 
-.features{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 38px;
-}
 .feature{
-    width: 219px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .details{
+        width: 45%;
+        h5{
+            margin-top: 20px;
+            font-size: 2rem;
+        }
     
-    h5{
-        margin-top: 20px;
-        font-size: 1.125rem;
+        p{
+            margin-top: 15px;
+            font-size: 1rem;
+            line-height: 2;
+        }
     }
 
-    p{
-        margin-top: 15px;
-        font-size: 0.875rem;
+    &-img{
+        width: 45%;
     }
-}
 
-.feature-img{
-    width: 120px;
+    &:nth-child(even){
+        flex-direction: row-reverse;
+    }
 }

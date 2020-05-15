@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    overflow: auto;
+}
+
 .banner{
     height: 100%;
     @include set-up-grid(120px);
@@ -21,4 +32,9 @@
             margin-top: 75px;
         }
     }
+}
+
+.what-we-offer{
+    padding: 0 151px;
+    text-align: center;
 }

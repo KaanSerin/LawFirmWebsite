@@ -1,6 +1,7 @@
 $light-color: #FBFBFB;
 $dark-color: #343434;
 $dark-50: #1640678f;
+$dark-100: #3674ad;
 $accent-color: #E54444;
 
 // Set the background to a gradient or if provided to and image
@@ -72,6 +73,16 @@ a{
     }
 }
 
+main{
+    background-color: $light-color;
+}
+
+.what-we-offer{
+    margin: 0 131px;
+    padding: 0 20px;
+    text-align: center;
+}
+
 .feature{
     margin-top: 30px;
     
@@ -105,5 +116,35 @@ a{
     #downArrow{
         fill: $light-color;
         width: 50px;
+    }
+}
+
+.attorneys{
+    // background-color: $dark-50;
+    color: $dark-color;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+
+    h3{
+        margin-top: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+
+    .cards{
+        margin-top: 20px;
+    }
+}
+
+.card{
+    p{
+        margin: 0 7.5%;
+        line-height: 1.5;
+        visibility: hidden;
+    }
+
+    img{
+        width: 95%;
     }
 }

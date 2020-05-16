@@ -45,13 +45,22 @@ html, body{
     }
 }
 
-.what-we-offer{
-    padding: 0 151px;
-    text-align: center;
-}
-
 .feature{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.attorneys{
+    .cards{
+        display:flex;
+        justify-content: space-around;
+        
+        .card{ 
+            p{
+                position: relative;
+                top: -50%;
+            }
+        }
+    }
 }

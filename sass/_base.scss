@@ -13,8 +13,8 @@ $accent-color: #E54444;
 
 @mixin set-up-grid($row-height){
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(auto, $row-height) 1fr;
+    grid-template-columns:  minmax(60px, 1fr) 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto, $row-height) 1fr 1fr;
 }
 
 
@@ -29,14 +29,16 @@ body{
     color: $light-color;
 }
 
-a{
+a, .logo, svg{
     cursor: pointer;
+}
+
+a{
     text-decoration: none;
 }
 
 .logo{
     width: 227px;
-    cursor: pointer;
 }
 
 .links{
@@ -94,5 +96,14 @@ a{
 
     &:nth-child(even){
         flex-direction: row-reverse;
+    }
+}
+
+.arrowArea{
+    padding-bottom: 40px;
+    
+    #downArrow{
+        fill: $light-color;
+        width: 50px;
     }
 }

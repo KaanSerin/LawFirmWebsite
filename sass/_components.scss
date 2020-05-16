@@ -1,3 +1,5 @@
+// Button Classes
+// Button base class
 %btn{
     cursor: pointer;
     background-color: rgba($color: #000000, $alpha: 0);
@@ -22,4 +24,27 @@
     font-size: 1.75rem;
     border: 2px solid $light-color;
     padding: 20px 24px;
+}
+
+
+// Horizontal rule style
+hr{
+    margin: 70px auto 40px auto;
+    width: 70%;
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+
+    &:after { /* Not really supposed to work, but does */
+        content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+    }
 }

@@ -22,6 +22,7 @@ $accent-color: #E54444;
 
 body{
     font-family: "Lato", sans-serif;
+    background-color: $light-color;
     color: $dark-color;
 }
 
@@ -73,10 +74,6 @@ a{
     }
 }
 
-main{
-    background-color: $light-color;
-}
-
 .what-we-offer{
     margin: 0 131px;
     padding: 0 20px;
@@ -120,11 +117,8 @@ main{
 }
 
 .attorneys{
-    // background-color: $dark-50;
     color: $dark-color;
     text-align: center;
-    margin-top: 30px;
-    padding: 20px 0;
 
     h3{
         margin-top: 0;
@@ -133,7 +127,7 @@ main{
     }
 
     .cards{
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
@@ -145,6 +139,6 @@ main{
     }
 
     img{
-        width: 95%;
+        width: 55%;
     }
 }

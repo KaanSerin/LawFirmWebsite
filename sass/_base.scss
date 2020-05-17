@@ -43,13 +43,12 @@ a{
     width: 227px;
 }
 
-.links{
+#links{
 
     a{
         font-size: 1.1rem;
         color: $light-color;
         font-weight: 300;
-        padding: 0 0 4px 0;
         margin-right: 70px;
         
         &:hover{

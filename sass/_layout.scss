@@ -6,43 +6,8 @@
 
 html, body{
     height: 100%;
-    
     // This line breaks the window.scroll method for some reason
     // overflow: hidden;
-}
-
-.banner{
-    height: 100%;
-    @include set-up-grid(120px);
-
-    nav{
-        grid-column: 2 / span 6;
-        display:flex;
-        align-items: center;
-        height: 120px;
-        
-        .links{
-            margin-left: auto;
-        }
-    }
-    
-    .content{
-        grid-column: 2 / span 4;
-        margin-top: 80px;
-
-        button{
-            margin-top: 75px;
-        }
-    }
-
-    .arrowArea{
-        grid-column: 1 / 9;
-        grid-row: 3 / 4;
-
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    }
 }
 
 .feature{

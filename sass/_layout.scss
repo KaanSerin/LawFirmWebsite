@@ -30,13 +30,23 @@ html, body{
 .attorneys{
     .cards{
         display:flex;
-        justify-content: space-around;
-        
-        .card{ 
-            p{
-                position: relative;
-                top: -50%;
-            }
-        }
+        flex-wrap: wrap;
+        justify-content: center;
     }
+}
+
+.map-and-description{
+    display:flex;
+    justify-content: center;
+
+    .description{
+        text-align: start;
+    }
+}
+
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
 }

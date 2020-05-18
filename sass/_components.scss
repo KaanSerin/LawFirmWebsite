@@ -27,16 +27,25 @@
     padding: 20px 24px;
 }
 
+.button-filled{
+    @extend %button;
+    background-color: $accent-color;
+    
+    &:hover{
+        background-color: lighten($accent-color, 10);
+        scale: 0.9;
+    }
+}
 
 // Horizontal rule style
 hr{
-    margin: 70px auto 40px auto;
+    margin: 70px auto 70px auto;
     width: 70%;
     overflow: visible; /* For IE */
     padding: 0;
     border: none;
-    border-top: medium double #333;
-    color: #333;
+    border-top: medium double $dark-100;
+    color: $dark-100;
     text-align: center;
 
     &:after { /* Not really supposed to work, but does */
@@ -46,6 +55,6 @@ hr{
     top: -0.7em;
     font-size: 1.5em;
     padding: 0 0.25em;
-    background: white;
+    background: $light-color;
     }
 }

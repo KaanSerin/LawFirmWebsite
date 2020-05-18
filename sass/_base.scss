@@ -18,7 +18,11 @@ $accent-color: #E54444;
     grid-template-rows: minmax(auto, $row-height) 1fr 1fr;
 }
 
-
+@mixin marginAndPadding(){
+    margin: 0 131px;
+    padding: 0 20px;
+    text-align: center;
+}
 
 body{
     font-family: "Lato", sans-serif;
@@ -44,6 +48,9 @@ nav.navbar{
     .navbar-toggler{
         border: none;
 
+        &:focus{
+            outline: none;
+        }
         .line{
             width: 25px;
             border-bottom: 2px solid $light-color;
@@ -87,9 +94,7 @@ nav.navbar{
 }
 
 .what-we-offer{
-    margin: 0 131px;
-    padding: 0 20px;
-    text-align: center;
+    @include marginAndPadding();
 }
 
 .feature{
@@ -130,28 +135,51 @@ nav.navbar{
 }
 
 .attorneys{
-    color: $dark-color;
-    text-align: center;
-
-    h3{
-        margin-top: 0;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 3rem;
-    }
+    @include marginAndPadding();
 
     .cards{
-        margin-top: 30px;
+        margin-top: 40px;
+
+        .card{
+            width: 320px;
+            margin: 20px 4%;
+        }
     }
 }
 
-.card{
-    p{
-        margin: 0 7.5%;
-        line-height: 1.5;
-        visibility: hidden;
-    }
+.map-and-description{
+    margin-top: 30px;
 
-    img{
-        width: 55%;
+    .description{
+        max-width: 40%;
+    }
+}
+
+
+.get-in-touch{
+    @include marginAndPadding();
+}
+
+.map{
+    padding-right: 20px;
+    border-right: 2px solid $dark-color;
+    margin-right: 60px;
+}
+
+footer{
+    margin-top: 60px;
+    background-color: $dark-100;
+    color: $light-color;
+
+    span{
+        font-size: .9rem;
+        font-weight: 100;
+        a{
+            color: $light-color;
+            text-decoration: underline;
+            &:hover{
+                color: darken($light-color, 20);
+            }
+        }
     }
 }

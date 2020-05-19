@@ -17,36 +17,33 @@ html, body{
 }
 
 .arrowArea{
-    display: flex;
-    justify-content: center;
+    @include set-up-flex();
 }
 
 .feature{
-    display: flex;
-    align-items: center;
+    @include set-up-flex();
     justify-content: space-between;
 }
 
 .attorneys{
     .cards{
-        display:flex;
+        @include set-up-flex();
         flex-wrap: wrap;
-        justify-content: center;
     }
+}
+.awards{
+    @include set-up-flex();
+    justify-content: space-evenly;
 }
 
 .map-and-description{
-    display:flex;
-    justify-content: center;
-
+    @include set-up-flex();
     .description{
         text-align: start;
     }
 }
 
 footer{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include set-up-flex();
     height: 100px;
 }

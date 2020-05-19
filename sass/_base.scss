@@ -24,6 +24,13 @@ $accent-color: #E54444;
     text-align: center;
 }
 
+@mixin set-up-flex(){
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 body{
     font-family: "Lato", sans-serif;
     background-color: $light-color;
@@ -142,11 +149,24 @@ nav.navbar{
 
         .card{
             width: 320px;
-            margin: 20px 4%;
+            margin: 20px 2%;
+        }
+
+        .card-title{
+            padding-bottom: 2px;
+            border-bottom: 1px solid $dark-color;
         }
     }
 }
-
+.why-us{
+    text-align: center;
+}
+.awards{
+    margin-top: 30px;
+    img{
+        width: 150px;
+    }
+}
 .map-and-description{
     margin-top: 30px;
 
@@ -162,7 +182,7 @@ nav.navbar{
 
 .map{
     padding-right: 20px;
-    border-right: 2px solid $dark-color;
+    // border-right: 2px solid $dark-color;
     margin-right: 60px;
 }
 

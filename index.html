@@ -152,16 +152,27 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.570764219181!2d33.90945921552039!3d35.142383666941335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dfc9de2ec388ab%3A0x90b5c9b9584b6f10!2sEastern%20Mediterranean%20University!5e0!3m2!1sen!2s!4v1589799985541!5m2!1sen!2s"
                     width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
-                <div class="description">
-                    <h4>We are just around the corner!</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis consequuntur dignissimos,
-                        minima
-                        quibusdam natus alias perferendis, reprehenderit vel ipsam exercitationem ratione non blanditiis
-                        voluptatum beatae? Cumque unde provident fuga suscipit ab? Quaerat natus et nostrum! Beatae
-                        dolor
-                        voluptatibus vitae?</p>
-                    <button href="#" class="button-filled">Contact Us</button>
-                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fname">Name</label>
+                            <input type="text" class="form-control" id="fname" name="fname" placeholder="John">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lname">Surname</label>
+                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Watson">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="button-primary button-filled">Submit</button>
+                </form>
             </div>
         </div>
     </main>

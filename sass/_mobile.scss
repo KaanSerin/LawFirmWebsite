@@ -1,5 +1,23 @@
 @media screen and (max-width: 960px){
-    
+    hr{
+        margin: 40px auto;
+    }
+    .banner{
+        background-position: 65% 0%;
+    }
+
+    .content{
+        h1{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 1.8rem;
+        }
+        .button-large{
+            font-size: 1.5rem;
+        }
+    }
+
     .feature{
         flex-direction: column;
         img{
@@ -16,5 +34,13 @@
 
     .feature:nth-child(even){
         flex-direction: column;
+    }
+
+    .map-and-description{
+        flex-direction: column-reverse;
+
+        .map{
+            margin: 40px 0 0 0;
+        }
     }
 }

@@ -18,7 +18,7 @@ $accent-color: #E54444;
     grid-template-rows: minmax(auto, $row-height) 1fr 1fr;
 }
 
-@mixin marginAndPadding(){
+.margin-and-padding{
     margin: 0 12%;
     padding: 0 20px;
     text-align: center;
@@ -100,9 +100,9 @@ nav.navbar{
     }
 }
 
-.what-we-offer{
-    @include marginAndPadding();
-}
+// .what-we-offer{
+//     @include marginAndPadding();
+// }
 
 .feature{
     margin-top: 30px;
@@ -142,7 +142,7 @@ nav.navbar{
 }
 
 .attorneys{
-    @include marginAndPadding();
+    // @include marginAndPadding();
 
     .cards{
         margin-top: 40px;
@@ -177,7 +177,7 @@ nav.navbar{
 
 
 .get-in-touch{
-    @include marginAndPadding();
+    // @include marginAndPadding();
     
     form{
         border: 1px solid $dark-50;
@@ -200,6 +200,8 @@ footer{
     span{
         font-size: .9rem;
         font-weight: 100;
+        text-align: center;
+        
         a{
             color: $light-color;
             text-decoration: underline;
